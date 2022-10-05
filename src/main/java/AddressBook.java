@@ -6,7 +6,7 @@ public class AddressBook {
     static List<Person> personList = new ArrayList<Person>(); 
     public static void main(String[] args) {
         System.out.println("Welcome To AddressBook Program");
-        CreateContact();
+        AddNew();
         display();
         
     }
@@ -15,7 +15,7 @@ public class AddressBook {
         System.out.println(personList);
     }
 
-    private static void CreateContact() {
+    private static void AddNew() {
         Scanner sc = new Scanner (System.in);
         System.out.println("Enter The Name");
         String Name = sc.nextLine();
