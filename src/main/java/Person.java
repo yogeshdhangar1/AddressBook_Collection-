@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Person {
     String Name ;
     String Address;
@@ -14,7 +16,6 @@ public class Person {
         this.zip = zip;
         Number = number;
     }
-
     @Override
     public String toString() {
         return "Person{" +
