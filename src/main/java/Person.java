@@ -45,7 +45,22 @@ public class Person {
             Number = 0;
         }
     }
+    private static void AddNew() {
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Enter The Name");
+        String Name = sc.nextLine();
+        System.out.println("Enter the Address");
+        String Address = sc.nextLine();
+        System.out.println("Enter The City ");
+        String City = sc.nextLine();
+        System.out.println("Enter the Email ");
+        String Email = sc.nextLine();
+        System.out.println("Enter the Number");
+        int Number = sc.nextInt();
+        System.out.println("Enter The Zip Code ");
+        int Zip = sc.nextInt();
 
+    }
     @Override
     public String toString() {
         return "Person{" +
