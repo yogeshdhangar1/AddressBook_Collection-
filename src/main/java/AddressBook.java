@@ -1,16 +1,30 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
 public class AddressBook {
     static List<Person> personList = new ArrayList<Person>(); 
     public static void main(String[] args) {
         System.out.println("Welcome To AddressBook Program");
-        AddNew();
-        display();
-        
-    }
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Press \n 1.AddNew \n 2.EditNumberContact \n 3.display \n 4.exit");
+        boolean t = true;
+        while(t){
+            int value = sc.nextInt();
+            if(value == 1){
+                AddNew();
+            }
+            if(value==2){
 
+               Person. EditNumberContact();
+            }
+            if(value==3){
+                display();
+            }
+            if(value==4){
+                t=false;
+            }
+        }
+    }
     private static void display() {
         System.out.println(personList);
     }
