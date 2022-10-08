@@ -32,6 +32,19 @@ public class Person {
         System.out.println("Enter The Number");
         int number = sc.nextInt();
     }
+    public static  void deleteFunction(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter The Name");
+        String name = sc.nextLine();
+        if(Name.equals(name)){
+             Name = null;
+            Address = null;
+            Email = null;
+            City = null;
+            zip = 0;
+            Number = 0;
+        }
+    }
 
     @Override
     public String toString() {
