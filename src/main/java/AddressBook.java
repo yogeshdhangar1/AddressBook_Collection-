@@ -2,7 +2,6 @@ import com.opencsv.CSVReader;
 import com.opencsv.CSVReaderBuilder;
 import com.opencsv.CSVWriter;
 import com.opencsv.exceptions.CsvException;
-
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -33,7 +32,6 @@ public class AddressBook {
             System.out.println();
         }
     }
-
     public static void main(String[] args) throws IOException, CsvException {
         AddressBook obj = new AddressBook();
         obj.WriteData();
